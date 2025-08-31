@@ -1,0 +1,254 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Landing Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Muli', sans-serif;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #header {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 50px;
+                background-color: #ffff00;
+                z-index: 999;
+            }
+
+            #header-img {
+                margin: 5px 0px 0px 20px;
+            }
+
+            #nav-bar {
+                float: right;
+            }
+
+            #nav-bar li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            #nav-bar a {
+                color: #000;
+                text-decoration: none;
+            }
+
+            #nav-bar a:hover {
+                text-decoration: underline;
+            }
+
+            #main {
+                margin-top: 50px;
+            }
+
+            #about {
+                padding-top: 30vh;
+                min-height: 70vh;
+                background-color: #ffff00;
+                text-align: center;
+            }
+
+            #form {
+                margin-top: 40px;
+            }
+
+            [type='email'] {
+                width: 300px;
+                height: 25px;
+                border: 1px solid #ffff00;
+                border-radius: 5px;
+                padding: 2px 0px 2px 5px;
+                outline: none;
+            }
+
+            [type='submit'] {
+                margin-top: 5px;
+                background-color: #000;
+                border: 1px solid #000;
+                border-radius: 3px;
+                color: #fff;
+                outline: none;
+                padding: 5px 3px 5px 3px;
+            }
+
+            #features {
+                background-color: #E8F1F8;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding-top: 10vh;
+                min-height: 90vh;
+            }
+
+            #features h2 {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .feature {
+                position: relative;
+                width: 300px;
+                height: 199px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            .feature p {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 130px;
+                height: 35px;
+                margin: 35% auto;
+                display: block;
+                background-color: #1919E6;
+                text-align: center;
+                padding: 6px 2px 2px 2px;
+                border-radius: 4px;
+            }
+
+            .feature a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            #f-1 {
+                background: url('https://user-images.githubusercontent.com/52071920/60584340-9fa67c00-9daa-11e9-9ce3-14504271f8c1.jpg');
+                background-size: cover; 
+            }
+
+            #f-2 {
+                background: url('https://user-images.githubusercontent.com/52071920/60586941-da131780-9db0-11e9-8d0a-385e152e54d4.jpg');
+                background-size: cover;
+            }
+
+            #f-3 {
+                background: url('https://user-images.githubusercontent.com/52071920/60587128-4f7ee800-9db1-11e9-9d3a-36eb5c6f223b.jpg');
+                background-size: cover;
+            }
+
+            #f-4 {
+                background: url('https://user-images.githubusercontent.com/52071920/60587506-404c6a00-9db2-11e9-87a2-6f5763854830.jpg');
+                background-size: cover;
+            }
+
+            #f-5 {
+                background: url('https://user-images.githubusercontent.com/52071920/60587578-6ffb7200-9db2-11e9-9724-8eda8d6c63f4.jpg');
+                background-size: cover;
+            }
+
+            #f-6 {
+                background: url('https://user-images.githubusercontent.com/52071920/60587687-b18c1d00-9db2-11e9-9623-d1e73325740b.jpg');
+                background-size: cover;
+            }
+
+            #media {
+                padding-top: 10vh;
+                min-height: 90vh;
+                display: block;
+                width: 100%;
+                text-align: center;
+                background-color: #E8F1F8;
+            }
+
+            #video {
+                width: 560px;
+                height: 315px;
+            }
+
+            #footer {
+                margin: 0;
+                background-color: #ccc;
+                height: 100px;
+                padding: 15px;
+                text-align: center;
+            }
+
+            #footer a {
+                color: #000;
+            }
+
+            @media (max-width:300px) {
+                [type='email'] {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:768px) {
+                #video {
+                    height: 300px;
+                    width: 600px;
+                }
+
+                #nav-bar li {
+                display: inline;
+                margin-right: 10px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" src="">
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#media">Media</a></li>
+                    <li><a class="nav-link" href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <div id="about">
+                <h1>What kind of business that's, that doesn't have a website!</h1>
+                <p>Get a awesome website for yourself, your business, school, church and for lot more at a good price.</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST" autocomplete="off">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required autofocus><br>
+                    <input type="submit" name="submit" id="submit" value="Get started!">
+                </form>
+            </div>
+            <div id="features">
+                <h2>Things that made us the top in line</h2>
+                <div id="f-1" class="feature">
+                    <p><a href="#">Find a domain</a></p>
+                </div>
+                <div id="f-2" class="feature">
+                    <p><a href="#">Build a site</a></p>
+                </div>
+                <div id="f-3" class="feature">
+                    <p><a href="#">Host a site</a></p>
+                </div>
+                <div id="f-4" class="feature">
+                    <p><a href="#">Get listed</a></p>
+                </div>
+                <div id="f-5" class="feature">
+                    <p><a href="#">Sell online</a></p>
+                </div>
+                <div id="f-6" class="feature">
+                    <p><a href="#">Get email</a></p>
+                </div>
+            </div>
+            <div id="media">
+                <h2>Let's work togeather</h2>
+                <iframe id="video" src="https://www.youtube.com/embed/Ql01t3duiPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="footer">
+                    <p>Designed and developed by <a href="https://twitter.com/waltvmiller" target="_blank">Walt Miller</a>.</p>
+            </div>
+        </main>
+    </body>
+</html>
